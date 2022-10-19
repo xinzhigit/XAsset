@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+/.idea/.idea.XAsset/.idea/.gitignore
+/.idea/.idea.XAsset/.idea/encodings.xml
+/.idea/.idea.XAsset/.idea/indexLayout.xml
+/.idea/.idea.XAsset/.idea/vcs.xml

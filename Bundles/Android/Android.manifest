@@ -1,0 +1,127 @@
+ManifestFileVersion: 0
+CRC: 1073384517
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: shaders
+      Dependencies: {}
+    Info_1:
+      Name: arts_prefabs_buttonmenu_prefab
+      Dependencies:
+        Dependency_0: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_2:
+      Name: arts_prefabs_children_prefab
+      Dependencies:
+        Dependency_0: arts_prefabs_children2_prefab
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_3:
+      Name: arts_prefabs_children2_prefab
+      Dependencies:
+        Dependency_0: arts_prefabs_children_prefab
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_4:
+      Name: arts_prefabs_customloader_prefab
+      Dependencies: {}
+    Info_5:
+      Name: arts_prefabs_plane_prefab
+      Dependencies: {}
+    Info_6:
+      Name: arts_prefabs_preload_copyright_prefab
+      Dependencies:
+        Dependency_0: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_7:
+      Name: arts_prefabs_preload_loadingscreen_prefab
+      Dependencies:
+        Dependency_0: shaders
+        Dependency_1: arts_textures_borders_basic
+        Dependency_2: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_8:
+      Name: arts_prefabs_preload_messagebox_prefab
+      Dependencies:
+        Dependency_0: shaders
+        Dependency_1: arts_textures_borders_basic
+        Dependency_2: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_9:
+      Name: arts_scenes_about_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_buttonmenu_prefab
+        Dependency_1: arts_textures
+        Dependency_2: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_10:
+      Name: arts_scenes_additive_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_buttonmenu_prefab
+        Dependency_1: arts_textures_borders_basic
+        Dependency_2: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_11:
+      Name: arts_scenes_additive2_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_plane_prefab
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_12:
+      Name: arts_scenes_async2sync_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_buttonmenu_prefab
+        Dependency_1: arts_textures_borders_basic
+        Dependency_2: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_13:
+      Name: arts_scenes_checkupdate_unity
+      Dependencies:
+        Dependency_0: arts_textures_bgs
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+        Dependency_2: auto_arts_scenes_checkupdate_unity
+    Info_14:
+      Name: arts_scenes_cyclereferences_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_buttonmenu_prefab
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_15:
+      Name: arts_scenes_download_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_buttonmenu_prefab
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_16:
+      Name: arts_scenes_getdownloadsize_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_buttonmenu_prefab
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_17:
+      Name: arts_scenes_loadrawasset_unity
+      Dependencies:
+        Dependency_0: arts_prefabs_buttonmenu_prefab
+        Dependency_1: arts_textures_borders_basic
+        Dependency_2: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_18:
+      Name: arts_scenes_menu_unity
+      Dependencies:
+        Dependency_0: arts_textures_bgs
+        Dependency_1: arts_textures_borders_basic
+        Dependency_2: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_19:
+      Name: arts_scenes_openingdialog_unity
+      Dependencies:
+        Dependency_0: arts_textures_borders_basic
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_20:
+      Name: arts_scenes_splash_unity
+      Dependencies:
+        Dependency_0: arts_textures
+        Dependency_1: auto_74dcacbbe8efb0043f016a42cc66d294
+    Info_21:
+      Name: arts_textures_bgs
+      Dependencies: {}
+    Info_22:
+      Name: arts_textures_borders_basic
+      Dependencies: {}
+    Info_23:
+      Name: arts_textures_borders
+      Dependencies: {}
+    Info_24:
+      Name: arts_textures
+      Dependencies: {}
+    Info_25:
+      Name: auto_74dcacbbe8efb0043f016a42cc66d294
+      Dependencies: {}
+    Info_26:
+      Name: auto_arts_scenes_checkupdate_unity
+      Dependencies: {}

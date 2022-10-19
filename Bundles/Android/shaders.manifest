@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 330302541
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e5632e69e022560bfc2c8e1c6df702f8
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5651999fa58938ac55fc849c3d2539bc
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/xasset/Example/Arts/Shaders/SimpleGrabPassBlur.shader
+- Assets/xasset/Example/Arts/Shaders/UIBlur.mat
+Dependencies: []

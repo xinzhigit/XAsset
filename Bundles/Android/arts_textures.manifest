@@ -1,0 +1,22 @@
+ManifestFileVersion: 0
+CRC: 1039296031
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d2b297aa5dd87fcf73f821f71e8675ce
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 12da798fbf3a6c0c342cc56cb1a6efdf
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/xasset/Example/Arts/Textures/jb_beam.png
+- Assets/xasset/Example/Arts/Textures/igg.png
+- Assets/xasset/Example/Arts/Textures/Logo.png
+- Assets/xasset/Example/Arts/Textures/PPJT.png
+Dependencies: []

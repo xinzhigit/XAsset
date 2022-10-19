@@ -1,0 +1,1 @@
+"C:/Program Files/Unity/Hub/Editor/2020.3.38f1c1/Editor/Unity.exe" -quit -batchmode -logfile BuildBundles.log -projectPath "E:\GitProjects\XAsset" -executeMethod xasset.editor.CommandLine.BuildPlayer -config %1 -offline %2

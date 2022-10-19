@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 3141309636
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c676cffc7e0773f6f8855d24a0c32430
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6893d17f7a813c37f4f7b51abc5be221
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/xasset/Example/Arts/Prefabs/Plane.prefab
+Dependencies: []

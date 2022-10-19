@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 1584735710
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d8fadb7b6cb7bcf7179f3d26176a49cd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 508b0cc0ba0509fb7ee10576b5809fca
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/xasset/Example/Arts/Prefabs/Preload/Copyright.prefab
+Dependencies:
+- E:/GitProjects/XAsset/Bundles/Android/auto_74dcacbbe8efb0043f016a42cc66d294

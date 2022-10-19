@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 709935746
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 49bb197855c610e97878c8a4c5ae7f60
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8f89fcfe36d26cdb2889c06ea5f3875e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0854393237f842bca640a0974ffdc787, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/xasset/Example/Arts/Prefabs/CustomLoader.prefab
+Dependencies: []
