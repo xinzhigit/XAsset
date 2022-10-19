@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d4b10611b54474c9d5d0777bfb3989, type: 3}
+  m_Name: Records
+  m_EditorClassIdentifier: 
+  data:
+  - file: arts_v3_f804b9cce528665042b9319977040eca.json
+    size: 133493
+    timestamp: 132928646926191475
+    date: "2022\u5E7403\u670827\u65E5-22\u65F624\u520652\u79D2"
+    platform: Windows
+    elapsed: 5.214
+    changes:
+    - arts_scenes_checkupdate_unity_06011b1bd1612461cdec93eaa73abb37
+    - arts_scenes_menu_unity_bf2f915beb18cf005e5bcfa4a451ecf0
+    - arts_v3_f804b9cce528665042b9319977040eca.json
+    - versions_fd51277be9e0fb47e2524831820c5d1f.json
+    build: Arts
+  - file: arts_v1_3e7ff81bb56f122edf2dc8126d0c796f.json
+    size: 3000805
+    timestamp: 132928480161553889
+    date: "2022\u5E7403\u670827\u65E5-17\u65F646\u520656\u79D2"
+    platform: Windows
+    elapsed: 12.919
+    changes:
+    - shaders_e48e30361e40bfde5012c230615be7ae
+    - arts_prefabs_buttonmenu_prefab_876076cd008fa4957bd72c025b8d3ffb
+    - arts_prefabs_children_prefab_81211611f781f63f044185aaac6871d3
+    - arts_prefabs_children2_prefab_f06c2c9fb536df4ffbbd0faec6e80965
+    - arts_prefabs_customloader_prefab_3ba4d4f60c2d527bc2380daf8ef31992
+    - arts_prefabs_plane_prefab_df290d6a3bad7d13d8ad8a51804a0418
+    - arts_prefabs_preload_copyright_prefab_b91774e64e5d33bc1116794e3795a718
+    - arts_prefabs_preload_loadingscreen_prefab_7bafdfb74a4cda081d95f40697dcb10b
+    - arts_prefabs_preload_messagebox_prefab_91f9b1d39a3206c91de3b39373379e4a
+    - arts_scenes_about_unity_4deb05047c41bb16ec852fc422ff372b
+    - arts_scenes_additive_unity_c32a65025e1929c1b398447be843ebee
+    - arts_scenes_additive2_unity_270321407abeb22ce4406125ee1c1067
+    - arts_scenes_async2sync_unity_277e1c7f58f8f4006a9017f6e919a01b
+    - arts_scenes_checkupdate_unity_7d2ab2816919e5dd0d51762768a30ec6
+    - arts_scenes_cyclereferences_unity_92accd9ea2a88342fafbbecbb4ef408e
+    - arts_scenes_download_unity_cbd3dd871e4ced25813a90fd527132d1
+    - arts_scenes_getdownloadsize_unity_aac480bb6b0bb010ee7b6db192fb2e72
+    - arts_scenes_loadrawasset_unity_97ce731152563f05f5feda9e85f20885
+    - arts_scenes_menu_unity_bf2f915beb18cf005e5bcfa4a451ecf0
+    - arts_scenes_openingdialog_unity_32a6214f9b5cc2060b2bc402aefc91c7
+    - arts_scenes_splash_unity_453121c9e61ac29673ddb5eb2fe3f67f
+    - arts_textures_bgs_2bf8307d575495e9893f124e12638cfe
+    - arts_textures_borders_basic_a66bb038ce4fab7047108e17cf191169
+    - arts_textures_borders_3e030914d9bc7bc2ce907b2d4d813dfc
+    - arts_textures_c353036297c47d9d39b05c6dd5af6cc0
+    - auto_74dcacbbe8efb0043f016a42cc66d294_548614232f92abc838da9101d4ef351a
+    - auto_arts_scenes_checkupdate_unity_17b423c2bdfc18c049b501ccb1ad2755
+    - arts_v1_3e7ff81bb56f122edf2dc8126d0c796f.json
+    - versions_490588dc6b8233bc808d47ac05e374a0.json
+    build: Arts
+  - file: data_v1_55aa148383fdcd53b48144d24b20cb35.json
+    size: 12537
+    timestamp: 132928436607924662
+    date: "2022\u5E7403\u670827\u65E5-16\u65F634\u520620\u79D2"
+    platform: Windows
+    elapsed: 0.046
+    changes:
+    - data_arts_json_e6e6fe216bf8121f0069b50113f3b6f9
+    - data_versions_json_1fa128caa61002cd7aec13b452b67639
+    - data_v1_7a8194c4cec699bc46b70d6554ebaed8.bin
+    - data_v1_55aa148383fdcd53b48144d24b20cb35.json
+    - versions_9d45241ccce771138a8b55a1fccacfbb.json
+    build: Data
