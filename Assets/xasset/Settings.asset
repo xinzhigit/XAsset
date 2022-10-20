@@ -25,7 +25,7 @@ MonoBehaviour:
   bundleExtension: 
   forceAllShadersPackTogether: 0
   forceAllScenesPackByFile: 1
-  splitConfig: {fileID: 11400000, guid: c7e057abad71d2849ba14404e72fd3bc, type: 2}
+  splitConfig: {fileID: 11400000, guid: 2456d5840df07c745b7c4d8c6436068e, type: 2}
   encryptionEnabled: 1
   simulationEnabled: 0
   scriptPlayMode: 0
