@@ -1,32 +1,48 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 using xasset;
+using Object = UnityEngine.Object;
 
 namespace AutoRelease
 {
     public class AutoRelease : MonoBehaviour
     {
-        [SerializeField] private Button btnLoad;
+        [SerializeField] private Button btnLoadLogo;
 
         [SerializeField] private Button btnDestroyLogo;
+        
+        [SerializeField] private Button btnLoadPPTJ;
+
+        [SerializeField] private Button btnDestroyPPTJ;
+        
+        [SerializeField] private Button btnLoadPlane;
+
+        [SerializeField] private Button btnDestroyPlane;
 
         [SerializeField] private Image imageLogo;
+        
+        [SerializeField] private Image imagePPTJ;
 
-        private class AssetRef
-        {
-            public Asset Asset;
-            public GameObject Go;
-        }
+        private ResourceManager _resourceManager;
 
-        private readonly List<AssetRef> _assets = new List<AssetRef>();
-
+        private readonly List<GameObject> _gameObjects = new List<GameObject>();
+        
         private void Awake()
         {
-            btnLoad.onClick.AddListener(OnLoad);
+            _resourceManager = new ResourceManager();
+            
+            btnLoadLogo.onClick.AddListener(OnLoadLogo);
             btnDestroyLogo.onClick.AddListener(OnDestroyLogo);
+            
+            btnLoadPPTJ.onClick.AddListener(OnLoadPPTJ);
+            btnDestroyPPTJ.onClick.AddListener(OnDestroyPPTJ);
+            
+            btnLoadPlane.onClick.AddListener(OnLoadPlane);
+            btnDestroyPlane.onClick.AddListener(OnDestroyPlane);
         }
 
         private IEnumerator Start()
@@ -39,50 +55,57 @@ namespace AutoRelease
 
         private void Update()
         {
-            UpdateRef();
+            _resourceManager.Update();
         }
 
-        private void OnLoad()
+        private void OnLoadLogo()
         {
-            Asset.LoadAsync("Assets/xasset/Example/Arts/Textures/Logo.png", typeof(Sprite), asset =>
-            {
-                if (imageLogo == null)
+            _resourceManager.LoadAsync<Sprite>("Assets/xasset/Example/Arts/Textures/Logo.png", imageLogo,
+                (asset, sprite) =>
                 {
-                    return;
-                }
-
-                imageLogo.sprite = asset.Get<Sprite>();
-                
-                AddRef(asset, imageLogo.gameObject);
-            });
+                    imageLogo.sprite = sprite;
+                });
         }
 
         private void OnDestroyLogo()
         {
-            UnityEngine.Object.Destroy(imageLogo.gameObject);
+            UnityEngine.Object.Destroy(imageLogo);
+        }
+        
+        private void OnLoadPPTJ()
+        {
+            imagePPTJ.sprite = _resourceManager.Load<Sprite>("Assets/xasset/Example/Arts/Textures/PPJT.png", imagePPTJ);
+        }
+        
+        private void OnDestroyPPTJ()
+        {
+            UnityEngine.Object.Destroy(imagePPTJ);
         }
 
-        private void AddRef(Asset asset, GameObject go)
+        private void OnLoadPlane()
         {
-            _assets.Add(new AssetRef { Asset = asset, Go = go});
-
-            Debug.Log($"Add ref {asset} {go}");
-        }
-
-        private void UpdateRef()
-        {
-            for (int i = _assets.Count - 1; i >= 0; --i)
+            _resourceManager.LoadGoAsync("Assets/xasset/Example/Arts/Prefabs/Plane.prefab", transform, (asset, go) =>
             {
-                var assetRef = _assets[i];
+                _gameObjects.Add(go);
+                
+                Debug.Log($"On load game object {_gameObjects.Count}");
+            });
+        }
 
-                if (assetRef.Go == null)
-                {
-                    assetRef.Asset?.Release();
-                    _assets.RemoveAt(i);
-                    
-                    Debug.Log($"Remove ref {i} {assetRef.Asset} {assetRef.Go}");
-                }
+        private void OnDestroyPlane()
+        {
+            if (_gameObjects.Count == 0)
+            {
+                return;
             }
+
+            var destroyIndex = _gameObjects.Count - 1;
+            var destroyGo = _gameObjects[destroyIndex];
+            _gameObjects.RemoveAt(destroyIndex);
+            
+            UnityEngine.Object.Destroy(destroyGo);
+            
+            Debug.Log($"On destroy game object {_gameObjects.Count}");
         }
     }
 }
