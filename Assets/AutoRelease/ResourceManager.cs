@@ -22,6 +22,13 @@ namespace AutoRelease
             UpdateRef();
         }
         
+        /// <summary>
+        /// 同步加载资源
+        /// </summary>
+        /// <param name="path">资源路径</param>
+        /// <param name="user">资源使用者（用来自动管理资源生命周期，必须传）</param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public T Load<T>(string path, UnityEngine.Object user) where T : UnityEngine.Object
         {
             var asset = xasset.Asset.Load(path, typeof(T));
@@ -31,6 +38,13 @@ namespace AutoRelease
             return obj;
         }
 
+        /// <summary>
+        /// 异步加载资源
+        /// </summary>
+        /// <param name="path">资源路径</param>
+        /// <param name="user">资源使用者（用来自动管理资源生命周期，必须传）</param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public void LoadAsync<T>(string path, UnityEngine.Object user, Action<xasset.Asset,T> func) where T : UnityEngine.Object
         {
             var realFunc = func;
@@ -45,6 +59,7 @@ namespace AutoRelease
         }
 
         /// <summary>
+        /// 同步加载prefab
         /// 加载prefab需要特殊处理，因为要实例化
         /// 加载完成后会实例化，外面不需要再实例化
         /// </summary>
@@ -62,6 +77,7 @@ namespace AutoRelease
         }
         
         /// <summary>
+        /// 异步加载prefab
         /// 加载prefab需要特殊处理，因为要实例化
         /// 加载完成后会实例化，外面不需要再实例化
         /// </summary>
